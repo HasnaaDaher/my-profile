@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffe5f1, #ffffff);
+    color: #4a4a4a;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(to right, #ff9a9e, #fecfef);
+    color: white;
+    padding: 30px 0;
+    border-bottom: 4px solid #ff9a9e;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Section */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section img {
+    display: block;
+    margin: 0 auto 25px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ff9a9e;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+section a {
+    display: block;
+    text-align: center;
+    background: #ff9a9e;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    margin: 15px auto;
+    width: fit-content;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+section a:hover {
+    background: #fecfef;
+    color: #ff9a9e;
+}
+
+/* Sections with Headers */
+h2 {
+    color: #ff9a9e;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+h2:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ff9a9e;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background: linear-gradient(to right, #ff9a9e, #fecfef);
+    color: white;
+    border-top: 4px solid #ff9a9e;
+}
+
+footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #fecfef;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
